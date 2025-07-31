@@ -32,5 +32,13 @@ python rmsd_calculator.py --ligand_1 <path_to_ligand1.pdb> --ligand_2 <path_to_l
 * --output_file (optional): Output filename for the renamed ligand 2 PDB file. Defaults to tmp.pdb.
 * --no_rename (optional): If set, the script will not rename atoms in ligand 2 or save an output PDB file.
 
+### Examples
+1. Calculate RMSD and save renamed ligand 2 to tmp.pdb (default behavior):
+python rmsd_calculator.py --ligand_1 ligand_a.pdb --ligand_2 ligand_b.pdb
+2. Calculate RMSD and save renamed ligand 2 to a specific file:
+python rmsd_calculator.py --ligand_1 ligand_a.pdb --ligand_2 ligand_b.pdb --output_file aligned_ligand_b.pdb
+3. Calculate RMSD without renaming or saving ligand 2:
+python rmsd_calculator.py --ligand_1 ligand_a.pdb --ligand_2 ligand_b.pdb --no_rename
+
 
 
