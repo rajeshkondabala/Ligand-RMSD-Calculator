@@ -40,5 +40,8 @@ python rmsd_calculator.py --ligand_1 ligand_a.pdb --ligand_2 ligand_b.pdb --outp
 3. Calculate RMSD without renaming or saving ligand 2:
 python rmsd_calculator.py --ligand_1 ligand_a.pdb --ligand_2 ligand_b.pdb --no_rename
 
+## Contributing
+Feel free to open issues or pull requests if you have suggestions for improvements or find any bugs.
+
 
 
