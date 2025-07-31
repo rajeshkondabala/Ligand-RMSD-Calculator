@@ -16,10 +16,10 @@ This code can be run in any conda environment where both NumPy and RDKit are ins
 
 ### Create a conda environment:
 * This will install Numpy
-  conda create -n ligrmsd python=3.9 -y
+conda create -n ligrmsd python=3.9 -y
 
 activate ligrmsd
 
 * Install RDKit
-  conda install conda-forge::rdkit -y
+conda install conda-forge::rdkit -y
 
