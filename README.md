@@ -15,10 +15,22 @@ This repository contains a Python script to calculate the Root Mean Square Devia
 This code can be run in any conda environment where both NumPy and RDKit are installed.
 
 ### Create a conda environment:
-#### This will install Numpy
+##### This will install Numpy
 conda create -n ligrmsd python=3.9 -y
 
 activate ligrmsd
-#### Install RDKit
+##### Install RDKit
 conda install conda-forge::rdkit -y
+
+## Usage
+##### The script can be run from the command line.
+python rmsd_calculator.py --ligand_1 <path_to_ligand1.pdb> --ligand_2 <path_to_ligand2.pdb> [options]
+
+### Arguments
+* --ligand_1 (required): Path to the first ligand PDB file.
+* --ligand_2 (required): Path to the second ligand PDB file.
+* --output_file (optional): Output filename for the renamed ligand 2 PDB file. Defaults to tmp.pdb.
+* --no_rename (optional): If set, the script will not rename atoms in ligand 2 or save an output PDB file.
+
+
 
